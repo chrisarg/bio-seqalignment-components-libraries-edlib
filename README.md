@@ -4,7 +4,7 @@ Bio::SeqAlignment::Components::Libraries::edlib - edlib library for developing s
 
 # VERSION
 
-version 0.01
+version 0.02
 
 # SYNOPSIS
 
