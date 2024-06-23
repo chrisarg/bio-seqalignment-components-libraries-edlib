@@ -7,52 +7,42 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Imports all modules relevant to sequence mapping",
+  "ABSTRACT" => "basic edlib library",
   "AUTHOR" => "Christos Argyropoulos <chrisarg\@cpan.org>",
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0
   },
-  "DISTNAME" => "Bio-SeqAlignment-Components-SeqMapping",
+  "DISTNAME" => "Bio-SeqAlignment-Components-Libraries-edlib",
   "LICENSE" => "perl",
-  "NAME" => "Bio::SeqAlignment::Components::SeqMapping",
+  "NAME" => "Bio::SeqAlignment::Components::Libraries::edlib",
   "PREREQ_PM" => {
+    "Alien::SeqAlignment::edlib" => 0,
     "Carp" => 0,
-    "MCE" => 0,
-    "MCE::Candy" => 0,
-    "Module::Find" => 0,
-    "Module::Runtime" => 0,
-    "Moose" => 0,
-    "Moose::Role" => 0,
-    "Scalar::Util" => 0,
-    "namespace::autoclean" => 0,
+    "Env" => 0,
+    "Exporter" => 0,
+    "FFI::Platypus" => 0,
+    "FFI::Platypus::Record" => 0,
+    "Inline" => 0,
+    "constant" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "TEST_REQUIRES" => {
-    "ExtUtils::MakeMaker" => 0,
-    "File::Spec" => 0,
-    "Test::More" => 0
-  },
   "VERSION" => "0.03",
   "test" => {
-    "TESTS" => "t/*.t"
+    "TESTS" => ""
   }
 );
 
 
 my %FallbackPrereqs = (
+  "Alien::SeqAlignment::edlib" => 0,
   "Carp" => 0,
-  "ExtUtils::MakeMaker" => 0,
-  "File::Spec" => 0,
-  "MCE" => 0,
-  "MCE::Candy" => 0,
-  "Module::Find" => 0,
-  "Module::Runtime" => 0,
-  "Moose" => 0,
-  "Moose::Role" => 0,
-  "Scalar::Util" => 0,
-  "Test::More" => 0,
-  "namespace::autoclean" => 0,
+  "Env" => 0,
+  "Exporter" => 0,
+  "FFI::Platypus" => 0,
+  "FFI::Platypus::Record" => 0,
+  "Inline" => 0,
+  "constant" => 0,
   "strict" => 0,
   "warnings" => 0
 );
